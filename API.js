@@ -50,3 +50,5 @@
 //  2. Retrieve user
 // Real world - this might not be the case
 
+// How to write API documentation : https://gist.github.com/iros/3426278
+
