@@ -1,5 +1,5 @@
 //Node.js is a js runtime created in 2009
-//event-driven, non-blocking I/O model that makes it lightweight and efficient
+//event-driven, non-blocking I/O (input/output) model that makes it lightweight and efficient
 //asynchronous event driven JS runtime (it's JS code run asynchronously by events)
 //Node is not JS in the browser.  (node !== front-end JS)
 
@@ -11,7 +11,7 @@
 // In LAMP stack, Node is like Apache and PHP
 // Apache receives HTTP request, formats the response that is sent to client, Node can do it.
 // PHP talks to Mysql if needed, Node can do it.
-// It is VVVV quick, because JS was originally built for the browser which is why.
+// It is Very Very Very Very quick, because JS was originally built for the browser which is why.
 
 //Node tried to foresee + fix the problems that other languages have come across
 //  eg. dependencies with NPM(node package manager)
