@@ -19,7 +19,7 @@ app.post('/todos', jsonParser, function(req, res){
 
 //move todo items from <to do> to <done>
 app.put('/todos/:id', jsonParser, function(req, res){
-    let doneTodo = req.body
+    let doneTodo = req.params
     doneTodo.doneItem = 'this one is done'
     res.json(doneTodo)
 })
