@@ -31,3 +31,22 @@
 //
 //                                  }]
 //                             }
+// * URLs
+// - should be plural
+// - should represent the data you are interacting with (nouns)
+// eg. /users (all users),  /users/3 (individual user)   -> "users" is plural here
+// Get, Post, Put(edit), Delete
+// In an ideal world, API provides all 4 of them above. (In reality, it't not)
+// Should all handle all 4 verbs, even if they just give a failure response
+// Post, Put, Delete work in the same way since they store data in the body
+//
+
+
+// Nice to know :
+// -When you create/update a user, you should only get back
+// whether it worked or not, not the data you sent.
+// -This would mean you would have to do 2 API calls,
+//  1. Create user
+//  2. Retrieve user
+// Real world - this might not be the case
+
