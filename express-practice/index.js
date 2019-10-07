@@ -20,3 +20,9 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 //req.query to access a JS object (which is cuthbert here)
 //2. eg: /users/:id
 //  req.params to access object of URL params (eg. {id: 5})
+
+//$npm i body-parser
+
+//3. data sent in the body
+// - use body-parser from NPM
+// - req.body object with all the data in it.
