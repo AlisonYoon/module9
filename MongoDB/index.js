@@ -35,6 +35,7 @@ let getDataFromDbToView = (db, callback) => {
 
 app.get('/people', (req, res) => {
     MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true}, (err, client) => {
+        //{ useNewUrlParser: true, useUnifiedTopology: true}
         console.log('Connected correctly to MongoDb')
 
         let db = client.db('axolotls')
