@@ -10,8 +10,13 @@ app.use(express.static('public'))
 app.engine('handlebars', exphbs())
 app.set('view engine', 'handlebars')
 
+var context = {
+    title: "Some food",
+    body: "Looks good"
+}
+
 app.get('/', function(req, res) {
-    res.render('home')
+    res.render('home', context)
 })
 
 app.listen(3000, function () {
