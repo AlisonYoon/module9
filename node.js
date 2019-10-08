@@ -12,6 +12,7 @@
 // Apache receives HTTP request, formats the response that is sent to client, Node can do it.
 // PHP talks to Mysql if needed, Node can do it.
 // It is Very Very Very Very quick, because JS was originally built for the browser which is why.
+// It's very fast because it uses thread pool
 
 //Node tried to foresee + fix the problems that other languages have come across
 //  eg. dependencies with NPM(node package manager)
