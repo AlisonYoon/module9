@@ -12,6 +12,7 @@ const url = 'mongodb://localhost:27017'
 let updateDataInDb = (db, newData) => {
     let collection = db. collection('people')
     collection.updateOne({"name" : "Bob"}, { $set: newData }, (err, result) => {
+        //updateOne() will create new one if the one you're trying to update doesn't exist
         console.log("Updated the document")
     })
 }
