@@ -1,5 +1,6 @@
 var express = require('express')
 var mysql = require('mysql')
+var exphbs = require('express-handlebars')
 var app = express()
 var port = 3000
 
@@ -9,11 +10,14 @@ var connection = mysql.createConnection({
     database: 'cats'
 })
 
+app.engine('handlebars', exphbs())
+app.set('view engine', 'handlebars')
+
 app.get('/breed', function(req, res) {
     connection.connect()
-
     connection.query('SELECT `breed` FROM `breed`;', function(error, results, fields) {
-        res.json({data: results})
+        //var breedList = res.json({data: results})
+        res.render('home', {data: results})
     })
 })
 
